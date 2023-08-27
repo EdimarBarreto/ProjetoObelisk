@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitorização Zabbix</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1> Obelisk Monitoring </h1>
+        <div class="row mt-4">
+            <!-- Codigo para login e senha inicial -->
+            <div class="col-md-6">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Usuário</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+                <!-- Codigo para login e senha inicial -->
+                <h2>Lista de Hosts</h2>
+                <ul id="hostList" class="list-group"></ul>
+            </div>
+            <div class="col-md-6">
+                <h2>Detalhes do Host</h2>
+                <div id="hostDetails"></div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>
